@@ -2,7 +2,4 @@ discord==1.7.3
 discord.py==1.7.3
 python-dotenv==0.19.2
 aiohttp==3.7.4.post0
-axios==0.17.1
-discord.js==11.3.0
-dotenv==5.0.0
 requests
