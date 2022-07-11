@@ -22,10 +22,10 @@ client = discord.Client()
 
 async def get_price():
     async with aiohttp.ClientSession() as session:
-        async with session.get(f"https://api.coingecko.com/api/v3/simple/token_price/{CHAIN}?contract_addresses={CONTRACT}&vs_currencies={CURRENCY}") as r:
+        async with session.get(f"https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=creo-engine") as r:
             if r.status == 200:
                 js = await r.json()
-                price = js[CONTRACT][CURRENCY]
+                price = js[current_price][CURRENCY]
                 pricestring = (f"{NAME}: ${price}")
                 return pricestring
 
