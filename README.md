@@ -2,7 +2,7 @@
 CoinGeckoBot Discord Crypto Price Bot
 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/lucyharun/new)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/lucyharun/Discord-Crypto-Live-Price)
 
 
 
