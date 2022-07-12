@@ -24,6 +24,8 @@ CURRENCY = os.getenv('CURRENCY')
 
 client = discord.Client()
 
+function getPrices() {
+
 // API for price data.
 	axios.get(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=${process.env.PREFERRED_CURRENCY}&ids=${process.env.COIN_ID}`).then(res => {
 		// If we got a valid response
