@@ -26,6 +26,13 @@
     "REFRESH_TIMER":{
       "description": "How often should the price be refreshed in seconds.",
       "value": "60"
+    "COIN_ID": {
+      "description": "ID of the token. probably ethereum",
+      "value": "creo-engine"
+    },
+    "PREFERRED_CURRENCY": {
+      "description": "Currency",
+      "value": "usd"
     }
 
   }
