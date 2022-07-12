@@ -1,6 +1,6 @@
 {
-  "name": "CoinGecko-Discord-Bot",
-  "description": "Discord bot which displays CoinGecko crypto prices.",
+  "name": "Discord-Crypto-Live-Price-Bot",
+  "description": "Discord bot which displays live crypto prices.",
   "repository": "https://github.com/lucyharun",
   "keywords": ["CoinGecko", "Discord", "Bot", "Crypto0", "Price", "Ticker"],
   "env": {
