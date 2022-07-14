@@ -40,25 +40,4 @@ async def on_ready():
 async def refresh_price():
     for guild in client.guilds:
         await guild.me.edit(nick=await get_price())
-
-def get_price_change():
-    response = requests.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=creo-engine")
-    json_data = json.loads(response.text)
-    pricechange = json_data['price_change_percentage_24h']
-    return (pricechange)
-status = get_price_change()    
-
-@client.event
-async def on_ready():
-    print(f'{client.user} has connected to Discord! ')
-    for guild in client.guilds:
-        print("connected to ", guild.name)
-    refresh_pricechange.start()
-    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=f"${status}%|CREO"))
-
-@client.event
-async def on_message(message):
-    if msg.startswith("!refresh"):
-        refresh = get_price_change()
-        await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=f"${refresh}"))
 client.run(TOKEN)
