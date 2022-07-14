@@ -54,7 +54,7 @@ async def on_ready():
     for guild in client.guilds:
         print("connected to ", guild.name)
     refresh_pricechange.start()
-    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=f"${status}|CREO"))
+    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=f"${status}%|CREO"))
 
 @client.event
 async def on_message(message):
