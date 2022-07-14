@@ -6,7 +6,7 @@
   "env": {
     "CONTRACT": {
       "description": "Contract of the token/asset: e.g. 0xdac17f958d2ee523a2206206994597c13d831ec7",
-      "value": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      "value": "0x9521728bf66a867bc65a93ece4a543d817871eb7"
     },
     "NAME": {
       "description": "Name of the token/asset which will be shown before the price.",
@@ -24,7 +24,7 @@
       "value": "usd"
     },
     "REFRESH_TIMER":{
-      "description": "How often should the price be refreshed in seconds.",
+      "description": "How often should the price be refreshed",
       "value": "60"
     },
     "COIN_ID": {
